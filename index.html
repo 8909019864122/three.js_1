@@ -37,6 +37,15 @@
       renderer.render(scene, camera);          
       }
       render();
+
+      var boxGeometry = new THREE.BoxGeometry(10, 10, 10);
+
+      var basicMaterial = new THREE.MeshBasicMaterial({ color: 0x0095dd });
+
+      var cube = new THREE.Mesh(boxGeometry, basicMaterial);
+
+      scene.add(cube);
+      cube.rotation.set(0.4, 0.2, 0);
       
     </script>
   </body>
